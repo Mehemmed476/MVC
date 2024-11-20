@@ -1,0 +1,41 @@
+@using MVCtask1.Models
+@model MVCtask1.Models.Teacher
+
+<div class="container mt-5">
+    <div class="card shadow-sm">
+        <div class="card-header text-center bg-warning text-white">
+            <h4>Add New Teacher</h4>
+        </div>
+        <div class="card-body">
+            <form asp-action="AddTeacher" method="post">
+                <div class="mb-3">
+                    <label for="FirstName" class="form-label">First Name</label>
+                    <input type="text" id="FirstName" name="FirstName" class="form-control" placeholder="Enter first name" required />
+                </div>
+                <div class="mb-3">
+                    <label for="LastName" class="form-label">Last Name</label>
+                    <input type="text" id="LastName" name="LastName" class="form-control" placeholder="Enter last name" required />
+                </div>
+                <div class="mb-3">
+                    <label for="UserName" class="form-label">User Name</label>
+                    <input type="text" id="UserName" name="UserName" class="form-control" placeholder="Choose a username" required />
+                </div>
+                <div class="mb-3">
+                    <label for="Password" class="form-label">Password</label>
+                    <input type="password" id="Password" name="Password" class="form-control" placeholder="Enter a password" required />
+                </div>
+                <div class="mb-3">
+                    <label for="Groups" class="form-label">Assign Groups</label>
+                    <select id="Groups" name="Groups" class="form-select" multiple>
+                        @foreach (Group group in ViewBag.Groups)
+                        {
+                            <option value="@group.Id">@group.Name</option>
+                        }
+                    </select>
+                    <div class="form-text">Hold Ctrl (or Cmd) to select multiple groups</div>
+                </div>
+                <button type="submit" class="btn btn-warning w-100">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>

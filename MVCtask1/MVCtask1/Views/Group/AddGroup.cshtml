@@ -1,0 +1,23 @@
+@using MVCtask1.Models
+@model MVCtask1.Models.Group
+
+<div class="container mt-5">
+    <div class="card shadow-sm">
+        <div class="card-header text-center bg-success text-white">
+            <h4>Add New Group</h4>
+        </div>
+        <div class="card-body">
+            <form asp-action="AddGroup" method="post">
+                <div class="mb-3">
+                    <label for="Name" class="form-label">Group Name</label>
+                    <input type="text" id="Name" name="Name" class="form-control" placeholder="Enter group name" required />
+                </div>
+                <div class="mb-3">
+                    <label for="RoomNumber" class="form-label">Room Number</label>
+                    <input type="text" id="RoomNumber" name="RoomNumber" class="form-control" placeholder="Enter room number" required />
+                </div>
+                <button type="submit" class="btn btn-success w-100">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>

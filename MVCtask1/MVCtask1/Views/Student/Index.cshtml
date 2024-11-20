@@ -1,0 +1,54 @@
+@using MVCtask1.Data
+@model IEnumerable<MVCtask1.Models.Student>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Information</title>
+</head>
+<body style="background-color: #f8f9fa;">
+
+<div class="container mt-5">
+    <div class="card shadow-sm">
+        <div class="card-header text-center" style="background-color: #007bff; color: white;">
+            <h4>Student Details</h4>
+        </div>
+        <div class="card-body">
+            <h5 class="mb-4" style="color: #333;">List of Students</h5>
+            
+            @if (DataStore.Students.Any())
+            {
+                <div class="row">
+                    @foreach (var student in DataStore.Students)
+                    {
+                        <div class="col-md-6 mb-4">
+                            <div class="card">
+                                <div class="card-header" style="background-color: #6c757d; color: white;">
+                                    <strong>@student.FirstName @student.LastName</strong>
+                                </div>
+                                <div class="card-body" style="background-color: #f8f9fa;">
+                                    <p><strong>User Name:</strong> @student.UserName</p>
+                                    <p><strong>Password:</strong> @student.Password</p>
+                                    <p><strong>Group:</strong> @student.Group.Name
+                                </div>
+                                
+                                <a href="@Url.Action("AddStudent", "Student")" class="btn btn-primary mt-3">Add New Student</a>
+                            </div>
+                        </div>
+                    }
+                </div>
+            }
+            else
+            {
+                <p class="text-muted">No students found. Please add some.</p>
+                <a href="@Url.Action("AddStudent", "Student")" class="btn btn-primary mt-3">Add New Student</a>
+
+            }
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+{
+  "Version": 1,
+  "Hash": "ZAj34gEC0Mbr+/pJ4DeEVEyHA5NEJ2W6Gl3/ltk3WE4=",
+  "Source": "MVCtask1",
+  "BasePath": "_content/MVCtask1",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "MVCtask1/wwwroot",
+      "Source": "MVCtask1",
+      "ContentRoot": "/Users/mehemmedxelilzade/RiderProjects/MVCtask1/MVCtask1/wwwroot/",
+      "BasePath": "_content/MVCtask1",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "/Users/mehemmedxelilzade/RiderProjects/MVCtask1/MVCtask1/wwwroot/images/photomaqa.webp",
+      "SourceId": "MVCtask1",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/mehemmedxelilzade/RiderProjects/MVCtask1/MVCtask1/wwwroot/",
+      "BasePath": "_content/MVCtask1",
+      "RelativePath": "images/photomaqa.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/photomaqa.webp"
+    }
+  ]
+}

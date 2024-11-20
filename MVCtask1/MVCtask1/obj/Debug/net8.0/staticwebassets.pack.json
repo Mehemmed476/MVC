@@ -1,0 +1,25 @@
+{
+  "Files": [
+    {
+      "Id": "/Users/mehemmedxelilzade/RiderProjects/MVCtask1/MVCtask1/wwwroot/images/photomaqa.webp",
+      "PackagePath": "staticwebassets/images/photomaqa.webp"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.MVCtask1.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.build.MVCtask1.props",
+      "PackagePath": "build\\MVCtask1.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.MVCtask1.props",
+      "PackagePath": "buildMultiTargeting\\MVCtask1.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.MVCtask1.props",
+      "PackagePath": "buildTransitive\\MVCtask1.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

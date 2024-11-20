@@ -1,0 +1,42 @@
+@using MVCtask1.Data
+@model IEnumerable<MVCtask1.Models.Group>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group Details</title>
+</head>
+<body style="background-color: #f8f9fa;">
+
+<div class="container mt-5">
+    <div class="card shadow-sm">
+        <div class="card-header text-center" style="background-color: #28a745; color: white;">
+            <h4>Group Details</h4>
+        </div>
+        <div class="card-body">
+            <h5 class="card-title" style="color: #333;">Group Information</h5>
+
+            <!-- DataStore'dan alınan veriler burada listelenecek -->
+            @foreach (var group in DataStore.Groups)
+            {
+                <ul class="list-group">
+                    <li class="list-group-item" style="background-color: #f0f8f9;">
+                        <strong>Group Name:</strong> @group.Name
+                    </li>
+                    <li class="list-group-item" style="background-color: #f0f8f9;">
+                        <strong>Room Number:</strong> @group.RoomNumber
+                    </li>
+                </ul>
+                <br> <br> <br>
+            }
+
+            <a href="@Url.Action("AddGroup", "Group")" class="btn btn-primary mt-3">Add New Group</a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+@using MVCtask1.Data
+@model IEnumerable<MVCtask1.Models.Teacher>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Information</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body style="background-color: #f4f6f9;">
+
+<div class="container mt-5">
+    <div class="card shadow-sm">
+        <div class="card-header text-center" style="background-color: #007bff; color: white;">
+            <h4>Teacher Details</h4>
+        </div>
+        <div class="card-body">
+            <h5 class="mb-4" style="color: #333;">List of Teachers</h5>
+
+            <!-- DataStore'dan alınan öğretmen bilgileri burada listeleniyor -->
+            @if (DataStore.Teachers.Any())
+            {
+                <div class="row">
+                    @foreach (var teacher in DataStore.Teachers)
+                    {
+                        <div class="col-md-6 mb-4">
+                            <div class="card">
+                                <div class="card-header" style="background-color: #6c757d; color: white;">
+                                    <strong>@teacher.FirstName @teacher.LastName</strong>
+                                </div>
+                                <div class="card-body" style="background-color: #f8f9fa;">
+                                    <p><strong>User Name:</strong> @teacher.UserName</p>
+                                    <p><strong>Password:</strong> (hidden for security)</p>
+                                    <p><strong>Assigned Groups:</strong></p>
+                                    <ul>
+                                        @if (teacher.Groups != null && teacher.Groups.Any())
+                                        {
+                                            @foreach (var group in teacher.Groups)
+                                            {
+                                                <li>@group.Name</li>
+                                            }
+                                        }
+                                        else
+                                        {
+                                            <li>No groups assigned</li>
+                                        }
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+            }
+            else
+            {
+                <p class="text-muted">No teachers found. Please add some.</p>
+            }
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
