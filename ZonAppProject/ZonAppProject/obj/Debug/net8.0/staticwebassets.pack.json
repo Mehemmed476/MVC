@@ -1,0 +1,321 @@
+{
+  "Files": [
+    {
+      "Id": "/Users/mehemmedxelilzade/RiderProjects/ZonAppProject/ZonAppProject/wwwroot/css/bootstrap.css",
+      "PackagePath": "staticwebassets/css/bootstrap.css"
+    },
+    {
+      "Id": "/Users/mehemmedxelilzade/RiderProjects/ZonAppProject/ZonAppProject/wwwroot/css/bootstrap.min.css",
+      "PackagePath": "staticwebassets/css/bootstrap.min.css"
+    },
+    {
+      "Id": "/Users/mehemmedxelilzade/RiderProjects/ZonAppProject/ZonAppProject/wwwroot/css/boxicon.min.css",
+      "PackagePath": "staticwebassets/css/boxicon.min.css"
+    },
+    {
+      "Id": "/Users/mehemmedxelilzade/RiderProjects/ZonAppProject/ZonAppProject/wwwroot/css/custom.css",
+      "PackagePath": "staticwebassets/css/custom.css"
+    },
+    {
+      "Id": "/Users/mehemmedxelilzade/RiderProjects/ZonAppProject/ZonAppProject/wwwroot/css/templatemo.css",
+      "PackagePath": "staticwebassets/css/templatemo.css"
+    },
+    {
+      "Id": "/Users/mehemmedxelilzade/RiderProjects/ZonAppProject/ZonAppProject/wwwroot/fonts/boxicons.eot",
+      "PackagePath": "staticwebassets/fonts/boxicons.eot"
+    },
+    {
+      "Id": "/Users/mehemmedxelilzade/RiderProjects/ZonAppProject/ZonAppProject/wwwroot/fonts/boxicons.svg",
+      "PackagePath": "staticwebassets/fonts/boxicons.svg"
+    },
+    {
+      "Id": "/Users/mehemmedxelilzade/RiderProjects/ZonAppProject/ZonAppProject/wwwroot/fonts/boxicons.ttf",
+      "PackagePath": "staticwebassets/fonts/boxicons.ttf"
+    },
+    {
+      "Id": "/Users/mehemmedxelilzade/RiderProjects/ZonAppProject/ZonAppProject/wwwroot/fonts/boxicons.woff",
+      "PackagePath": "staticwebassets/fonts/boxicons.woff"
+    },
+    {
+      "Id": "/Users/mehemmedxelilzade/RiderProjects/ZonAppProject/ZonAppProject/wwwroot/fonts/boxicons.woff2",
+      "PackagePath": "staticwebassets/fonts/boxicons.woff2"
+    },
+    {
+      "Id": "/Users/mehemmedxelilzade/RiderProjects/ZonAppProject/ZonAppProject/wwwroot/img/apple-icon.png",
+      "PackagePath": "staticwebassets/img/apple-icon.png"
+    },
+    {
+      "Id": "/Users/mehemmedxelilzade/RiderProjects/ZonAppProject/ZonAppProject/wwwroot/img/banner-bg-01.jpg",
+      "PackagePath": "staticwebassets/img/banner-bg-01.jpg"
+    },
+    {
+      "Id": "/Users/mehemmedxelilzade/RiderProjects/ZonAppProject/ZonAppProject/wwwroot/img/banner-bg-02.jpg",
+      "PackagePath": "staticwebassets/img/banner-bg-02.jpg"
+    },
+    {
+      "Id": "/Users/mehemmedxelilzade/RiderProjects/ZonAppProject/ZonAppProject/wwwroot/img/banner-bg-03.jpg",
+      "PackagePath": "staticwebassets/img/banner-bg-03.jpg"
+    },
+    {
+      "Id": "/Users/mehemmedxelilzade/RiderProjects/ZonAppProject/ZonAppProject/wwwroot/img/banner-img-01.svg",
+      "PackagePath": "staticwebassets/img/banner-img-01.svg"
+    },
+    {
+      "Id": "/Users/mehemmedxelilzade/RiderProjects/ZonAppProject/ZonAppProject/wwwroot/img/banner-img-02.svg",
+      "PackagePath": "staticwebassets/img/banner-img-02.svg"
+    },
+    {
+      "Id": "/Users/mehemmedxelilzade/RiderProjects/ZonAppProject/ZonAppProject/wwwroot/img/favicon.ico",
+      "PackagePath": "staticwebassets/img/favicon.ico"
+    },
+    {
+      "Id": "/Users/mehemmedxelilzade/RiderProjects/ZonAppProject/ZonAppProject/wwwroot/img/feature-work-1-large.jpg",
+      "PackagePath": "staticwebassets/img/feature-work-1-large.jpg"
+    },
+    {
+      "Id": "/Users/mehemmedxelilzade/RiderProjects/ZonAppProject/ZonAppProject/wwwroot/img/feature-work-1.jpg",
+      "PackagePath": "staticwebassets/img/feature-work-1.jpg"
+    },
+    {
+      "Id": "/Users/mehemmedxelilzade/RiderProjects/ZonAppProject/ZonAppProject/wwwroot/img/feature-work-2-large.jpg",
+      "PackagePath": "staticwebassets/img/feature-work-2-large.jpg"
+    },
+    {
+      "Id": "/Users/mehemmedxelilzade/RiderProjects/ZonAppProject/ZonAppProject/wwwroot/img/feature-work-2.jpg",
+      "PackagePath": "staticwebassets/img/feature-work-2.jpg"
+    },
+    {
+      "Id": "/Users/mehemmedxelilzade/RiderProjects/ZonAppProject/ZonAppProject/wwwroot/img/feature-work-3-large.jpg",
+      "PackagePath": "staticwebassets/img/feature-work-3-large.jpg"
+    },
+    {
+      "Id": "/Users/mehemmedxelilzade/RiderProjects/ZonAppProject/ZonAppProject/wwwroot/img/feature-work-3.jpg",
+      "PackagePath": "staticwebassets/img/feature-work-3.jpg"
+    },
+    {
+      "Id": "/Users/mehemmedxelilzade/RiderProjects/ZonAppProject/ZonAppProject/wwwroot/img/feature-work-4-large.jpg",
+      "PackagePath": "staticwebassets/img/feature-work-4-large.jpg"
+    },
+    {
+      "Id": "/Users/mehemmedxelilzade/RiderProjects/ZonAppProject/ZonAppProject/wwwroot/img/feature-work-4.jpg",
+      "PackagePath": "staticwebassets/img/feature-work-4.jpg"
+    },
+    {
+      "Id": "/Users/mehemmedxelilzade/RiderProjects/ZonAppProject/ZonAppProject/wwwroot/img/our-work-01.jpg",
+      "PackagePath": "staticwebassets/img/our-work-01.jpg"
+    },
+    {
+      "Id": "/Users/mehemmedxelilzade/RiderProjects/ZonAppProject/ZonAppProject/wwwroot/img/our-work-02.jpg",
+      "PackagePath": "staticwebassets/img/our-work-02.jpg"
+    },
+    {
+      "Id": "/Users/mehemmedxelilzade/RiderProjects/ZonAppProject/ZonAppProject/wwwroot/img/our-work-03.jpg",
+      "PackagePath": "staticwebassets/img/our-work-03.jpg"
+    },
+    {
+      "Id": "/Users/mehemmedxelilzade/RiderProjects/ZonAppProject/ZonAppProject/wwwroot/img/our-work-04.jpg",
+      "PackagePath": "staticwebassets/img/our-work-04.jpg"
+    },
+    {
+      "Id": "/Users/mehemmedxelilzade/RiderProjects/ZonAppProject/ZonAppProject/wwwroot/img/our-work-05.jpg",
+      "PackagePath": "staticwebassets/img/our-work-05.jpg"
+    },
+    {
+      "Id": "/Users/mehemmedxelilzade/RiderProjects/ZonAppProject/ZonAppProject/wwwroot/img/our-work-06.jpg",
+      "PackagePath": "staticwebassets/img/our-work-06.jpg"
+    },
+    {
+      "Id": "/Users/mehemmedxelilzade/RiderProjects/ZonAppProject/ZonAppProject/wwwroot/img/pricing.svg",
+      "PackagePath": "staticwebassets/img/pricing.svg"
+    },
+    {
+      "Id": "/Users/mehemmedxelilzade/RiderProjects/ZonAppProject/ZonAppProject/wwwroot/img/recent-work-01.jpg",
+      "PackagePath": "staticwebassets/img/recent-work-01.jpg"
+    },
+    {
+      "Id": "/Users/mehemmedxelilzade/RiderProjects/ZonAppProject/ZonAppProject/wwwroot/img/recent-work-02.jpg",
+      "PackagePath": "staticwebassets/img/recent-work-02.jpg"
+    },
+    {
+      "Id": "/Users/mehemmedxelilzade/RiderProjects/ZonAppProject/ZonAppProject/wwwroot/img/recent-work-03.jpg",
+      "PackagePath": "staticwebassets/img/recent-work-03.jpg"
+    },
+    {
+      "Id": "/Users/mehemmedxelilzade/RiderProjects/ZonAppProject/ZonAppProject/wwwroot/img/recent-work-04.jpg",
+      "PackagePath": "staticwebassets/img/recent-work-04.jpg"
+    },
+    {
+      "Id": "/Users/mehemmedxelilzade/RiderProjects/ZonAppProject/ZonAppProject/wwwroot/img/recent-work-05.jpg",
+      "PackagePath": "staticwebassets/img/recent-work-05.jpg"
+    },
+    {
+      "Id": "/Users/mehemmedxelilzade/RiderProjects/ZonAppProject/ZonAppProject/wwwroot/img/recent-work-06.jpg",
+      "PackagePath": "staticwebassets/img/recent-work-06.jpg"
+    },
+    {
+      "Id": "/Users/mehemmedxelilzade/RiderProjects/ZonAppProject/ZonAppProject/wwwroot/img/related-post-01.jpg",
+      "PackagePath": "staticwebassets/img/related-post-01.jpg"
+    },
+    {
+      "Id": "/Users/mehemmedxelilzade/RiderProjects/ZonAppProject/ZonAppProject/wwwroot/img/related-post-02.jpg",
+      "PackagePath": "staticwebassets/img/related-post-02.jpg"
+    },
+    {
+      "Id": "/Users/mehemmedxelilzade/RiderProjects/ZonAppProject/ZonAppProject/wwwroot/img/related-post-03.jpg",
+      "PackagePath": "staticwebassets/img/related-post-03.jpg"
+    },
+    {
+      "Id": "/Users/mehemmedxelilzade/RiderProjects/ZonAppProject/ZonAppProject/wwwroot/img/services-01.jpg",
+      "PackagePath": "staticwebassets/img/services-01.jpg"
+    },
+    {
+      "Id": "/Users/mehemmedxelilzade/RiderProjects/ZonAppProject/ZonAppProject/wwwroot/img/services-02.jpg",
+      "PackagePath": "staticwebassets/img/services-02.jpg"
+    },
+    {
+      "Id": "/Users/mehemmedxelilzade/RiderProjects/ZonAppProject/ZonAppProject/wwwroot/img/services-03.jpg",
+      "PackagePath": "staticwebassets/img/services-03.jpg"
+    },
+    {
+      "Id": "/Users/mehemmedxelilzade/RiderProjects/ZonAppProject/ZonAppProject/wwwroot/img/services-04.jpg",
+      "PackagePath": "staticwebassets/img/services-04.jpg"
+    },
+    {
+      "Id": "/Users/mehemmedxelilzade/RiderProjects/ZonAppProject/ZonAppProject/wwwroot/img/services-05.jpg",
+      "PackagePath": "staticwebassets/img/services-05.jpg"
+    },
+    {
+      "Id": "/Users/mehemmedxelilzade/RiderProjects/ZonAppProject/ZonAppProject/wwwroot/img/services-06.jpg",
+      "PackagePath": "staticwebassets/img/services-06.jpg"
+    },
+    {
+      "Id": "/Users/mehemmedxelilzade/RiderProjects/ZonAppProject/ZonAppProject/wwwroot/img/services-07.jpg",
+      "PackagePath": "staticwebassets/img/services-07.jpg"
+    },
+    {
+      "Id": "/Users/mehemmedxelilzade/RiderProjects/ZonAppProject/ZonAppProject/wwwroot/img/services-08.jpg",
+      "PackagePath": "staticwebassets/img/services-08.jpg"
+    },
+    {
+      "Id": "/Users/mehemmedxelilzade/RiderProjects/ZonAppProject/ZonAppProject/wwwroot/img/team-01.jpg",
+      "PackagePath": "staticwebassets/img/team-01.jpg"
+    },
+    {
+      "Id": "/Users/mehemmedxelilzade/RiderProjects/ZonAppProject/ZonAppProject/wwwroot/img/team-02.jpg",
+      "PackagePath": "staticwebassets/img/team-02.jpg"
+    },
+    {
+      "Id": "/Users/mehemmedxelilzade/RiderProjects/ZonAppProject/ZonAppProject/wwwroot/img/team-03.jpg",
+      "PackagePath": "staticwebassets/img/team-03.jpg"
+    },
+    {
+      "Id": "/Users/mehemmedxelilzade/RiderProjects/ZonAppProject/ZonAppProject/wwwroot/img/team-04.jpg",
+      "PackagePath": "staticwebassets/img/team-04.jpg"
+    },
+    {
+      "Id": "/Users/mehemmedxelilzade/RiderProjects/ZonAppProject/ZonAppProject/wwwroot/img/team-05.jpg",
+      "PackagePath": "staticwebassets/img/team-05.jpg"
+    },
+    {
+      "Id": "/Users/mehemmedxelilzade/RiderProjects/ZonAppProject/ZonAppProject/wwwroot/img/team-06.jpg",
+      "PackagePath": "staticwebassets/img/team-06.jpg"
+    },
+    {
+      "Id": "/Users/mehemmedxelilzade/RiderProjects/ZonAppProject/ZonAppProject/wwwroot/img/work-slide-01-small.jpg",
+      "PackagePath": "staticwebassets/img/work-slide-01-small.jpg"
+    },
+    {
+      "Id": "/Users/mehemmedxelilzade/RiderProjects/ZonAppProject/ZonAppProject/wwwroot/img/work-slide-01.jpg",
+      "PackagePath": "staticwebassets/img/work-slide-01.jpg"
+    },
+    {
+      "Id": "/Users/mehemmedxelilzade/RiderProjects/ZonAppProject/ZonAppProject/wwwroot/img/work-slide-02-small.jpg",
+      "PackagePath": "staticwebassets/img/work-slide-02-small.jpg"
+    },
+    {
+      "Id": "/Users/mehemmedxelilzade/RiderProjects/ZonAppProject/ZonAppProject/wwwroot/img/work-slide-02.jpg",
+      "PackagePath": "staticwebassets/img/work-slide-02.jpg"
+    },
+    {
+      "Id": "/Users/mehemmedxelilzade/RiderProjects/ZonAppProject/ZonAppProject/wwwroot/img/work-slide-03-small.jpg",
+      "PackagePath": "staticwebassets/img/work-slide-03-small.jpg"
+    },
+    {
+      "Id": "/Users/mehemmedxelilzade/RiderProjects/ZonAppProject/ZonAppProject/wwwroot/img/work-slide-03.jpg",
+      "PackagePath": "staticwebassets/img/work-slide-03.jpg"
+    },
+    {
+      "Id": "/Users/mehemmedxelilzade/RiderProjects/ZonAppProject/ZonAppProject/wwwroot/img/work-slide-04-small.jpg",
+      "PackagePath": "staticwebassets/img/work-slide-04-small.jpg"
+    },
+    {
+      "Id": "/Users/mehemmedxelilzade/RiderProjects/ZonAppProject/ZonAppProject/wwwroot/img/work-slide-04.jpg",
+      "PackagePath": "staticwebassets/img/work-slide-04.jpg"
+    },
+    {
+      "Id": "/Users/mehemmedxelilzade/RiderProjects/ZonAppProject/ZonAppProject/wwwroot/img/work-slide-05-small.jpg",
+      "PackagePath": "staticwebassets/img/work-slide-05-small.jpg"
+    },
+    {
+      "Id": "/Users/mehemmedxelilzade/RiderProjects/ZonAppProject/ZonAppProject/wwwroot/img/work-slide-05.jpg",
+      "PackagePath": "staticwebassets/img/work-slide-05.jpg"
+    },
+    {
+      "Id": "/Users/mehemmedxelilzade/RiderProjects/ZonAppProject/ZonAppProject/wwwroot/img/work-slide-06-small.jpg",
+      "PackagePath": "staticwebassets/img/work-slide-06-small.jpg"
+    },
+    {
+      "Id": "/Users/mehemmedxelilzade/RiderProjects/ZonAppProject/ZonAppProject/wwwroot/img/work-slide-06.jpg",
+      "PackagePath": "staticwebassets/img/work-slide-06.jpg"
+    },
+    {
+      "Id": "/Users/mehemmedxelilzade/RiderProjects/ZonAppProject/ZonAppProject/wwwroot/img/work.svg",
+      "PackagePath": "staticwebassets/img/work.svg"
+    },
+    {
+      "Id": "/Users/mehemmedxelilzade/RiderProjects/ZonAppProject/ZonAppProject/wwwroot/js/bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets/js/bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "/Users/mehemmedxelilzade/RiderProjects/ZonAppProject/ZonAppProject/wwwroot/js/custom.js",
+      "PackagePath": "staticwebassets/js/custom.js"
+    },
+    {
+      "Id": "/Users/mehemmedxelilzade/RiderProjects/ZonAppProject/ZonAppProject/wwwroot/js/fslightbox.js",
+      "PackagePath": "staticwebassets/js/fslightbox.js"
+    },
+    {
+      "Id": "/Users/mehemmedxelilzade/RiderProjects/ZonAppProject/ZonAppProject/wwwroot/js/isotope.pkgd.js",
+      "PackagePath": "staticwebassets/js/isotope.pkgd.js"
+    },
+    {
+      "Id": "/Users/mehemmedxelilzade/RiderProjects/ZonAppProject/ZonAppProject/wwwroot/js/jquery.min.js",
+      "PackagePath": "staticwebassets/js/jquery.min.js"
+    },
+    {
+      "Id": "/Users/mehemmedxelilzade/RiderProjects/ZonAppProject/ZonAppProject/wwwroot/js/templatemo.js",
+      "PackagePath": "staticwebassets/js/templatemo.js"
+    },
+    {
+      "Id": "/Users/mehemmedxelilzade/RiderProjects/ZonAppProject/ZonAppProject/wwwroot/js/templatemo.min.js",
+      "PackagePath": "staticwebassets/js/templatemo.min.js"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.ZonAppProject.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.build.ZonAppProject.props",
+      "PackagePath": "build\\ZonAppProject.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.ZonAppProject.props",
+      "PackagePath": "buildMultiTargeting\\ZonAppProject.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.ZonAppProject.props",
+      "PackagePath": "buildTransitive\\ZonAppProject.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
