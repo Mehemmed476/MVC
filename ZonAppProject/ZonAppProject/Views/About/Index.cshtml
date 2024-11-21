@@ -1,4 +1,7 @@
-    <!-- Start Banner Hero -->
+@using ZonAppProject.Models;
+@model IEnumerable<TeamMember>;
+
+<!-- Start Banner Hero -->
     <section class="bg-light w-100">
         <div class="container">
             <div class="row d-flex align-items-center py-5">
@@ -30,27 +33,18 @@
             </div>
 
             <div class="col-lg-9 row">
-                <div class="team-member col-md-4">
-                    <img class="team-member-img img-fluid rounded-circle p-4" src="~/img/team-01.jpg" alt="Card image">
-                    <ul class="team-member-caption list-unstyled text-center pt-4 text-muted light-300">
-                        <li>John Doe</li>
-                        <li>Business Development</li>
-                    </ul>
-                </div>
-                <div class="team-member col-md-4">
-                    <img class="team-member-img img-fluid rounded-circle p-4" src="~/img/team-02.jpg" alt="Card image">
-                    <ul class="team-member-caption list-unstyled text-center pt-4 text-muted light-300">
-                        <li>Jane Doe</li>
-                        <li>Media Development</li>
-                    </ul>
-                </div>
-                <div class="team-member col-md-4">
-                    <img class="team-member-img img-fluid rounded-circle p-4" src="~/img/team-03.jpg" alt="Card image">
-                    <ul class="team-member-caption list-unstyled text-center pt-4 text-muted light-300">
-                        <li>Sam</li>
-                        <li>Developer</li>
-                    </ul>
-                </div>
+                @foreach (TeamMember item in @Model)
+                {
+                    <div class="team-member col-md-4">
+                        <img class="team-member-img img-fluid rounded-circle p-4" src="~/img/@item.ImageUrl" alt="Card image">
+                        <ul class="team-member-caption list-unstyled text-center pt-4 text-muted light-300">
+                            <li>@item.Name</li>
+                            <li>@item.Profession</li>
+                        </ul>
+                    </div> 
+                }
+                
+
             </div>
 
         </div>
