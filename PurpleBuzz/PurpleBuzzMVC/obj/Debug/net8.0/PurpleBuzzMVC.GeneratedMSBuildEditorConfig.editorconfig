@@ -1,0 +1,111 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = PurpleBuzzMVC
+build_property.RootNamespace = PurpleBuzzMVC
+build_property.ProjectDir = /Users/mehemmedxelilzade/RiderProjects/PurpleBuzz/PurpleBuzzMVC/
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /Users/mehemmedxelilzade/RiderProjects/PurpleBuzz/PurpleBuzzMVC
+build_property._RazorSourceGeneratorDebug = 
+
+[/Users/mehemmedxelilzade/RiderProjects/PurpleBuzz/PurpleBuzzMVC/Areas/Admin/Views/Dashboard/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvRGFzaGJvYXJkL0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/mehemmedxelilzade/RiderProjects/PurpleBuzz/PurpleBuzzMVC/Areas/Admin/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/mehemmedxelilzade/RiderProjects/PurpleBuzz/PurpleBuzzMVC/Areas/Admin/Views/TeamMember/CreateTeamMember.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvVGVhbU1lbWJlci9DcmVhdGVUZWFtTWVtYmVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/mehemmedxelilzade/RiderProjects/PurpleBuzz/PurpleBuzzMVC/Areas/Admin/Views/TeamMember/EditTeamMember.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvVGVhbU1lbWJlci9FZGl0VGVhbU1lbWJlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/mehemmedxelilzade/RiderProjects/PurpleBuzz/PurpleBuzzMVC/Areas/Admin/Views/TeamMember/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvVGVhbU1lbWJlci9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/mehemmedxelilzade/RiderProjects/PurpleBuzz/PurpleBuzzMVC/Areas/Admin/Views/TeamMember/SoftDeletedTeamMembers.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvVGVhbU1lbWJlci9Tb2Z0RGVsZXRlZFRlYW1NZW1iZXJzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/mehemmedxelilzade/RiderProjects/PurpleBuzz/PurpleBuzzMVC/Areas/Admin/Views/Work/CreateWork.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvV29yay9DcmVhdGVXb3JrLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/mehemmedxelilzade/RiderProjects/PurpleBuzz/PurpleBuzzMVC/Areas/Admin/Views/Work/EditWork.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvV29yay9FZGl0V29yay5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/mehemmedxelilzade/RiderProjects/PurpleBuzz/PurpleBuzzMVC/Areas/Admin/Views/Work/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvV29yay9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/mehemmedxelilzade/RiderProjects/PurpleBuzz/PurpleBuzzMVC/Areas/Admin/Views/Work/SoftDeletedWorks.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvV29yay9Tb2Z0RGVsZXRlZFdvcmtzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/mehemmedxelilzade/RiderProjects/PurpleBuzz/PurpleBuzzMVC/Areas/Admin/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/mehemmedxelilzade/RiderProjects/PurpleBuzz/PurpleBuzzMVC/Areas/Admin/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/mehemmedxelilzade/RiderProjects/PurpleBuzz/PurpleBuzzMVC/Views/About/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWJvdXQvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/mehemmedxelilzade/RiderProjects/PurpleBuzz/PurpleBuzzMVC/Views/Contact/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ29udGFjdC9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/mehemmedxelilzade/RiderProjects/PurpleBuzz/PurpleBuzzMVC/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/mehemmedxelilzade/RiderProjects/PurpleBuzz/PurpleBuzzMVC/Views/Pricing/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJpY2luZy9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/mehemmedxelilzade/RiderProjects/PurpleBuzz/PurpleBuzzMVC/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/mehemmedxelilzade/RiderProjects/PurpleBuzz/PurpleBuzzMVC/Views/Work-single/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvV29yay1zaW5nbGUvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/mehemmedxelilzade/RiderProjects/PurpleBuzz/PurpleBuzzMVC/Views/Work/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvV29yay9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/mehemmedxelilzade/RiderProjects/PurpleBuzz/PurpleBuzzMVC/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/mehemmedxelilzade/RiderProjects/PurpleBuzz/PurpleBuzzMVC/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 

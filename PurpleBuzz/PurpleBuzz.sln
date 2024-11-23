@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PurpleBuzzMVC", "PurpleBuzzMVC\PurpleBuzzMVC.csproj", "{11DD1F89-096D-4D71-AC8C-C3C1CDE4455C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PurpleBuzz.DAL", "PurpleBuzz.DAL\PurpleBuzz.DAL.csproj", "{C2ED72BB-A43A-4D4A-BDC1-D176E15B66FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PurpleBuzz.BL", "PurpleBuzz.BL\PurpleBuzz.BL.csproj", "{D54540B2-AC3D-42BC-B18B-0200FE31A74B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{11DD1F89-096D-4D71-AC8C-C3C1CDE4455C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11DD1F89-096D-4D71-AC8C-C3C1CDE4455C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11DD1F89-096D-4D71-AC8C-C3C1CDE4455C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11DD1F89-096D-4D71-AC8C-C3C1CDE4455C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2ED72BB-A43A-4D4A-BDC1-D176E15B66FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2ED72BB-A43A-4D4A-BDC1-D176E15B66FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2ED72BB-A43A-4D4A-BDC1-D176E15B66FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2ED72BB-A43A-4D4A-BDC1-D176E15B66FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D54540B2-AC3D-42BC-B18B-0200FE31A74B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D54540B2-AC3D-42BC-B18B-0200FE31A74B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D54540B2-AC3D-42BC-B18B-0200FE31A74B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D54540B2-AC3D-42BC-B18B-0200FE31A74B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

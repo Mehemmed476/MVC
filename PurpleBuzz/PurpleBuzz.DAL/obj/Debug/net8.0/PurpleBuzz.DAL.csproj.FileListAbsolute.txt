@@ -1,0 +1,14 @@
+/Users/mehemmedxelilzade/RiderProjects/PurpleBuzz/PurpleBuzz.DAL/bin/Debug/net8.0/PurpleBuzz.DAL.deps.json
+/Users/mehemmedxelilzade/RiderProjects/PurpleBuzz/PurpleBuzz.DAL/bin/Debug/net8.0/PurpleBuzz.DAL.runtimeconfig.json
+/Users/mehemmedxelilzade/RiderProjects/PurpleBuzz/PurpleBuzz.DAL/bin/Debug/net8.0/PurpleBuzz.DAL.dll
+/Users/mehemmedxelilzade/RiderProjects/PurpleBuzz/PurpleBuzz.DAL/bin/Debug/net8.0/PurpleBuzz.DAL.pdb
+/Users/mehemmedxelilzade/RiderProjects/PurpleBuzz/PurpleBuzz.DAL/obj/Debug/net8.0/PurpleBuzz.DAL.csproj.AssemblyReference.cache
+/Users/mehemmedxelilzade/RiderProjects/PurpleBuzz/PurpleBuzz.DAL/obj/Debug/net8.0/PurpleBuzz.DAL.GeneratedMSBuildEditorConfig.editorconfig
+/Users/mehemmedxelilzade/RiderProjects/PurpleBuzz/PurpleBuzz.DAL/obj/Debug/net8.0/PurpleBuzz.DAL.AssemblyInfoInputs.cache
+/Users/mehemmedxelilzade/RiderProjects/PurpleBuzz/PurpleBuzz.DAL/obj/Debug/net8.0/PurpleBuzz.DAL.AssemblyInfo.cs
+/Users/mehemmedxelilzade/RiderProjects/PurpleBuzz/PurpleBuzz.DAL/obj/Debug/net8.0/PurpleBuzz.DAL.csproj.CoreCompileInputs.cache
+/Users/mehemmedxelilzade/RiderProjects/PurpleBuzz/PurpleBuzz.DAL/obj/Debug/net8.0/PurpleBuzz.DAL.dll
+/Users/mehemmedxelilzade/RiderProjects/PurpleBuzz/PurpleBuzz.DAL/obj/Debug/net8.0/refint/PurpleBuzz.DAL.dll
+/Users/mehemmedxelilzade/RiderProjects/PurpleBuzz/PurpleBuzz.DAL/obj/Debug/net8.0/PurpleBuzz.DAL.pdb
+/Users/mehemmedxelilzade/RiderProjects/PurpleBuzz/PurpleBuzz.DAL/obj/Debug/net8.0/PurpleBuzz.DAL.genruntimeconfig.cache
+/Users/mehemmedxelilzade/RiderProjects/PurpleBuzz/PurpleBuzz.DAL/obj/Debug/net8.0/ref/PurpleBuzz.DAL.dll

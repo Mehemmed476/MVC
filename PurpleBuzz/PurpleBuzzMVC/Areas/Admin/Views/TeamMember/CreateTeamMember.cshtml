@@ -1,0 +1,30 @@
+@model PurpleBuzz.DAL.Models.TeamMember
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card shadow">
+                <div class="card-header">
+                    <h4 class="card-title">Create Team Member</h4>
+                </div>
+                <div class="card-body">
+                    <form method="post" asp-action="CreateTeamMember" asp-controller="TeamMember" asp-area="Admin">
+                        <div class="form-group">
+                            <label asp-for="Name" class="control-label">Name</label>
+                            <input asp-for="Name" class="form-control" />
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Profession" class="control-label">Profession</label>
+                            <input asp-for="Profession" class="form-control" />
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="ImageUrl" class="control-label">Image URL</label>
+                            <input asp-for="ImageUrl" class="form-control" />
+                        </div>
+                        <button type="submit" class="btn btn-primary">Create</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
