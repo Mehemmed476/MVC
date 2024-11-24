@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using PurpleBuzz.DAL.Contexts;
 
@@ -11,9 +12,11 @@ using PurpleBuzz.DAL.Contexts;
 namespace PurpleBuzz.DAL.Migrations
 {
     [DbContext(typeof(PurpleBuzzDbContext))]
-    partial class PurpleBuzzDbContextModelSnapshot : ModelSnapshot
+    [Migration("20241124162322_BeNullableWorks")]
+    partial class BeNullableWorks
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

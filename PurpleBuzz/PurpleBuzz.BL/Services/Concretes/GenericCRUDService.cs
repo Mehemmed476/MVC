@@ -17,12 +17,6 @@ public class GenericCRUDService : IGenericCRUDService
     public async Task<IEnumerable<T>> GetAllAsync<T>() where T : class
     {
         IEnumerable<T>? entities = await _context.Set<T>().ToListAsync();
-    
-        if (entities == null || !entities.Any())
-        {
-            throw new NullReferenceException("No data found.");
-        }
-
         return entities;
     }
 
@@ -36,7 +30,7 @@ public class GenericCRUDService : IGenericCRUDService
         return entity;
     }
 
-    public async Task CreateAsync<T>(T entity) where T : BaseEntity
+    public async Task CreateAsync<T>(T entity) where T : BaseAuditableEntity
     {
         if (entity == null)
         {
@@ -49,7 +43,7 @@ public class GenericCRUDService : IGenericCRUDService
         await _context.SaveChangesAsync();
     }
 
-    public async Task UpdateAsync<T>(T entity) where T : BaseEntity
+    public async Task UpdateAsync<T>(T entity) where T : BaseAuditableEntity
     {
         if (entity == null)
         {
@@ -70,7 +64,7 @@ public class GenericCRUDService : IGenericCRUDService
         await _context.SaveChangesAsync();
     }
 
-    public async Task DeleteAsync<T>(int id) where T : BaseEntity
+    public async Task DeleteAsync<T>(int id) where T : BaseAuditableEntity
     {
         var existingEntity = await _context.Set<T>().FindAsync(id);
 
@@ -83,7 +77,7 @@ public class GenericCRUDService : IGenericCRUDService
         await _context.SaveChangesAsync(); 
     }
 
-    public async Task SoftDeleteAsync<T>(int id) where T : BaseEntity 
+    public async Task SoftDeleteAsync<T>(int id) where T : BaseAuditableEntity 
     {
         var existingEntity = await _context.Set<T>().FindAsync(id);
 
@@ -99,7 +93,7 @@ public class GenericCRUDService : IGenericCRUDService
         
     }
 
-    public async Task RestoreAsync<T>(int id) where T : BaseEntity
+    public async Task RestoreAsync<T>(int id) where T : BaseAuditableEntity
     {
         var existingEntity = await _context.Set<T>().FindAsync(id);
 

@@ -1,6 +1,6 @@
 namespace PurpleBuzz.DAL.Models;
 
-public class TeamMember : BaseEntity
+public class TeamMember : BaseAuditableEntity
 {
     public string Name { get; set; }
     public string Profession { get; set; }

@@ -1,4 +1,4 @@
-@model PurpleBuzz.DAL.Models.Work
+@model PurpleBuzzMVC.Areas.Admin.ViewModels.WorkViewModel
 
 <div class="container mt-5">
     <div class="row">
@@ -10,19 +10,33 @@
                 <div class="card-body">
                     <form method="post" asp-action="CreateWork" asp-controller="Work" asp-area="Admin">
                         <div class="form-group">
-                            <label asp-for="Title" class="control-label">Title</label>
-                            <input asp-for="Title" class="form-control" />
+                            <label asp-for="Work.Title" class="control-label">Title</label>
+                            <input asp-for="Work.Title" class="form-control" />
                         </div>
                         <div class="form-group">
-                            <label asp-for="Description" class="control-label">Description</label>
-                            <input asp-for="Description" class="form-control" />
+                            <label asp-for="Work.Description" class="control-label">Description</label>
+                            <input asp-for="Work.Description" class="form-control" />
                         </div>
                         <div class="form-group">
-                            <label asp-for="MainImageUrl" class="control-label">Image URL</label>
-                            <input asp-for="MainImageUrl" class="form-control" />
+                            <label asp-for="Work.MainImageUrl" class="control-label">Image URL</label>
+                            <input asp-for="Work.MainImageUrl" class="form-control" />
                         </div>
+                
+                        <div class="form-group">
+                            <label asp-for="Work.OurServiceId" class="control-label">Our Service</label>
+                            <select asp-for="Work.OurServiceId" class="form-control">
+                                <option value="">Select Service</option>
+                                @foreach (var item in Model.Selecteds)
+                                {
+                                    <option value="@item.Value">@item.Text</option> 
+                                }
+                            </select>
+                            
+                        </div>
+                        
                         <button type="submit" class="btn btn-primary">Create</button>
                     </form>
+                    
                 </div>
             </div>
         </div>

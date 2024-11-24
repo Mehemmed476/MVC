@@ -1,22 +1,28 @@
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Newtonsoft.Json.Converters;
 using PurpleBuzz.BL.Services.Abstractions;
 using PurpleBuzz.BL.Services.Concretes;
 using PurpleBuzz.DAL.Models;
+using PurpleBuzzMVC.Areas.Admin.ViewModels;
 
 namespace PurpleBuzzMVC.Areas.Admin.Controllers;
 [Area("Admin")]
 public class WorkController : Controller
 {
     private readonly IGenericCRUDService _service;
+    private readonly IOurServiceService _ourServiceService;
 
-    public WorkController(IGenericCRUDService service)
+    public WorkController(IGenericCRUDService service, IOurServiceService ourServiceService)
     {
         _service = service;
+        _ourServiceService = ourServiceService;
     }
     
     [HttpGet]
     public async Task<IActionResult> Index()
     {
+        
         IEnumerable<Work> works = await _service.GetAllAsync<Work>();
         List<Work> activeWorks = works.Where(x => x.IsDeleted == false).ToList();
         return View(activeWorks);
@@ -31,21 +37,35 @@ public class WorkController : Controller
     }
     
     [HttpGet]
-    public IActionResult CreateWork()
+    public async Task<IActionResult> CreateWork()
     {
-        return View();
+        var model = new WorkViewModel
+        {
+            Selecteds = _service.GetAllAsync<OurService>().Result.Select(x => new SelectListItem
+            {
+                Value = x.Id.ToString(),
+                Text = x.Title
+            })
+        };
+        return View(model);
     }
     
     [HttpPost]
-    public async Task<IActionResult> CreateWork(Work work)
+    public async Task<IActionResult> CreateWork(WorkViewModel model)
     {
         if (ModelState.IsValid)
         { 
-            await _service.CreateAsync(work);
+            await _service.CreateAsync(model.Work);
             return RedirectToAction(nameof(Index));
         }
         
-        return View();
+        model.Selecteds = _ourServiceService.GetOurServices().Select(s => new SelectListItem
+        {
+            Value = s.Id.ToString(),
+            Text = s.Title
+        });
+        
+        return View(model);
     }
 
     [HttpGet]

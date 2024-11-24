@@ -1,14 +1,14 @@
-@model PurpleBuzz.DAL.Models.Work
+@model PurpleBuzz.DAL.Models.OurService
 
 <div class="container mt-5">
     <div class="row">
         <div class="col-md-12">
             <div class="card shadow">
                 <div class="card-header">
-                    <h4 class="card-title">Update Work</h4>
+                    <h4 class="card-title">Update OurService</h4>
                 </div>
                 <div class="card-body">
-                    <form method="post" asp-action="EditWork" asp-controller="Work" asp-area="Admin">
+                    <form method="post" asp-action="EditOurService" asp-controller="OurService" asp-area="Admin">
                         <div class="form-group">
                             <label asp-for="Title" class="control-label">Title</label>
                             <input asp-for="Title" class="form-control"/>
@@ -23,16 +23,6 @@
                             <label asp-for="MainImageUrl" class="control-label">Image URL</label>
                             <input asp-for="MainImageUrl" class="form-control"/>
                             <span asp-validation-for="MainImageUrl" class="text-danger"></span>
-                        </div>
-                        <div class="form-group">
-                            <label asp-for="OurServiceId" class="control-label">Our Service</label>
-                            <select asp-for="OurServiceId" class="form-control" asp-items="@(new SelectList(ViewBag.OurServices, "Id", "Name"))">
-                                <option value="">Select Service</option>
-                                @foreach (OurService item in ViewBag.OurServices)
-                                {
-                                <option value="@item.Id">@item.Title</option>
-                                }
-                            </select>
                         </div>
                         <button type="submit" class="btn btn-primary">Update</button>
                     </form>

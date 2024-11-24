@@ -14,7 +14,7 @@ builder.Services.AddDbContext<PurpleBuzzDbContext>(
     }
 );
 builder.Services.AddScoped<IGenericCRUDService, GenericCRUDService>();
-
+builder.Services.AddScoped<IOurServiceService, OurServiceService>();
 var app = builder.Build();
 
 app.UseStaticFiles();
