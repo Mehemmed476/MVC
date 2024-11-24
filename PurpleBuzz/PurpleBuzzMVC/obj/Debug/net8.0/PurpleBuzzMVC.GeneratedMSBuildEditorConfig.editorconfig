@@ -34,6 +34,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvT3VyU2VydmljZS9DcmVhdGVPdXJTZXJ2aWNlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/mehemmedxelilzade/RiderProjects/PurpleBuzz/PurpleBuzzMVC/Areas/Admin/Views/OurService/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvT3VyU2VydmljZS9EZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/mehemmedxelilzade/RiderProjects/PurpleBuzz/PurpleBuzzMVC/Areas/Admin/Views/OurService/EditOurService.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvT3VyU2VydmljZS9FZGl0T3VyU2VydmljZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -54,6 +58,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvVGVhbU1lbWJlci9DcmVhdGVUZWFtTWVtYmVyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/mehemmedxelilzade/RiderProjects/PurpleBuzz/PurpleBuzzMVC/Areas/Admin/Views/TeamMember/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvVGVhbU1lbWJlci9EZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/mehemmedxelilzade/RiderProjects/PurpleBuzz/PurpleBuzzMVC/Areas/Admin/Views/TeamMember/EditTeamMember.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvVGVhbU1lbWJlci9FZGl0VGVhbU1lbWJlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -68,6 +76,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/Users/mehemmedxelilzade/RiderProjects/PurpleBuzz/PurpleBuzzMVC/Areas/Admin/Views/Work/CreateWork.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvV29yay9DcmVhdGVXb3JrLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/mehemmedxelilzade/RiderProjects/PurpleBuzz/PurpleBuzzMVC/Areas/Admin/Views/Work/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvV29yay9EZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/mehemmedxelilzade/RiderProjects/PurpleBuzz/PurpleBuzzMVC/Areas/Admin/Views/Work/EditWork.cshtml]

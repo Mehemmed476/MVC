@@ -86,4 +86,11 @@ public class TeamMemberController : Controller
         await _service.RestoreAsync<TeamMember>(id);
         return RedirectToAction(nameof(SoftDeletedTeamMembers));
     }
+    
+    [HttpGet]
+
+    public IActionResult Details()
+    {
+        return View();
+    }
 }

@@ -11,12 +11,10 @@ namespace PurpleBuzzMVC.Areas.Admin.Controllers;
 public class WorkController : Controller
 {
     private readonly IGenericCRUDService _service;
-    private readonly IOurServiceService _ourServiceService;
 
-    public WorkController(IGenericCRUDService service, IOurServiceService ourServiceService)
+    public WorkController(IGenericCRUDService service)
     {
         _service = service;
-        _ourServiceService = ourServiceService;
     }
     
     [HttpGet]
@@ -53,19 +51,28 @@ public class WorkController : Controller
     [HttpPost]
     public async Task<IActionResult> CreateWork(WorkViewModel model)
     {
-        if (ModelState.IsValid)
-        { 
-            await _service.CreateAsync(model.Work);
-            return RedirectToAction(nameof(Index));
-        }
-        
-        model.Selecteds = _ourServiceService.GetOurServices().Select(s => new SelectListItem
+        if (!ModelState.IsValid)
         {
-            Value = s.Id.ToString(),
-            Text = s.Title
-        });
+            model.Selecteds = _service.GetAllAsync<OurService>().Result.Select(s => new SelectListItem
+            {
+                Value = s.Id.ToString(),
+                Text = s.Title
+            });
         
-        return View(model);
+            return View(model);
+            
+        }
+
+        Work work = new Work()
+        {
+            Title = model.Title,
+            Description = model.Description,
+            MainImageUrl = model.MainImageUrl,
+            OurServiceId = model.OurServiceId
+        };
+        await _service.CreateAsync(work);
+        return RedirectToAction(nameof(Index));
+        
     }
 
     [HttpGet]
@@ -106,5 +113,12 @@ public class WorkController : Controller
     {
         await _service.RestoreAsync<Work>(id);
         return RedirectToAction(nameof(SoftDeletedWorks));
+    }
+    
+    [HttpGet]
+
+    public IActionResult Details()
+    {
+        return View();
     }
 }

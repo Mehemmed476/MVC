@@ -86,4 +86,11 @@ public class OurServiceController : Controller
         await _service.RestoreAsync<OurService>(id);
         return RedirectToAction(nameof(SoftDeletedOurServices));
     }
+
+    [HttpGet]
+
+    public IActionResult Details()
+    {
+        return View();
+    }
 }
