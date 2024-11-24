@@ -1,15 +1,14 @@
 using Microsoft.AspNetCore.Mvc;
 using PurpleBuzz.BL.Services.Abstractions;
-using PurpleBuzz.BL.Services.Concretes;
 using PurpleBuzz.DAL.Models;
 
 namespace PurpleBuzzMVC.Areas.Admin.Controllers;
 [Area("Admin")]
 public class TeamMemberController : Controller
 {
-    private readonly ITeamMemberService _service;
+    private readonly IGenericCRUDService _service;
 
-    public TeamMemberController(ITeamMemberService service)
+    public TeamMemberController(IGenericCRUDService service)
     {
         _service = service;
     }
@@ -17,7 +16,7 @@ public class TeamMemberController : Controller
     [HttpGet]
     public async Task<IActionResult> Index()
     {
-        List<TeamMember> teamMembers = await _service.GetAllTeamMembersAsync();
+        IEnumerable<TeamMember> teamMembers = await _service.GetAllAsync<TeamMember>();
         List<TeamMember> activeTeamMembers = teamMembers.Where(x => x.IsDeleted == false).ToList();
         return View(activeTeamMembers);
     }
@@ -25,13 +24,13 @@ public class TeamMemberController : Controller
     [HttpGet]
     public async Task<IActionResult> SoftDeletedTeamMembers()
     {
-        List<TeamMember> teamMembers = await _service.GetAllTeamMembersAsync();
-        List<TeamMember> offlineTeamMembers = teamMembers.Where(x => x.IsDeleted == true).ToList();
+        IEnumerable<TeamMember> teamMembers = await _service.GetAllAsync<TeamMember>();
+        List<TeamMember> offlineTeamMembers = teamMembers.Where(x => x.IsDeleted).ToList();
         return View(offlineTeamMembers);
     }
     
     [HttpGet]
-    public async Task<IActionResult> CreateTeamMember()
+    public IActionResult CreateTeamMember()
     {
         return View();
     }
@@ -41,7 +40,7 @@ public class TeamMemberController : Controller
     {
         if (ModelState.IsValid)
         { 
-            await _service.AddTeamMember(teamMember);
+            await _service.CreateAsync(teamMember);
             return RedirectToAction(nameof(Index));
         }
         
@@ -50,9 +49,9 @@ public class TeamMemberController : Controller
 
     [HttpGet]
 
-    public async Task<IActionResult> EditTeamMember(int Id)
+    public async Task<IActionResult> EditTeamMember(int id)
     {
-        TeamMember teamMember = await _service.GetTeamMemberAsync(Id);
+        TeamMember teamMember = await _service.GetByIdAsync<TeamMember>(id);
         return View(teamMember);
     }
    
@@ -60,31 +59,31 @@ public class TeamMemberController : Controller
     
     public async Task<IActionResult> EditTeamMember(TeamMember teamMember)
     {
-        await _service.UpdateTeamMemberAsync(teamMember);
+        await _service.UpdateAsync(teamMember);
         return RedirectToAction(nameof(Index));
     }
     
     [HttpGet]
 
-    public async Task<IActionResult> SoftDeleteTeamMember(int Id)
+    public async Task<IActionResult> SoftDeleteTeamMember(int id)
     {
-        await _service.SoftDeleteTeamMemberAsync(Id);
+        await _service.SoftDeleteAsync<TeamMember>(id);
         return RedirectToAction(nameof(Index));
     }
     
     [HttpGet]
     
-    public async Task<IActionResult> DeleteTeamMember(int Id)
+    public async Task<IActionResult> DeleteTeamMember(int id)
     {
-        await _service.DeleteTeamMemberAsync(Id);
+        await _service.DeleteAsync<TeamMember>(id);
         return RedirectToAction(nameof(Index));
     }
 
     [HttpGet]
 
-    public async Task<IActionResult> RestoreTeamMembers(int Id)
+    public async Task<IActionResult> RestoreTeamMembers(int id)
     {
-        await _service.RestoreTeamMemberAsync(Id);
+        await _service.RestoreAsync<TeamMember>(id);
         return RedirectToAction(nameof(SoftDeletedTeamMembers));
     }
 }

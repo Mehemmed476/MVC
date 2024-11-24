@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Design;
 using PurpleBuzz.DAL.Models;
 
 namespace PurpleBuzz.DAL.Contexts;

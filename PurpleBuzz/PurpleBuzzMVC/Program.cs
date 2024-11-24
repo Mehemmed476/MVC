@@ -7,10 +7,14 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<PurpleBuzzDbContext>(
     options =>
-        options.UseSqlServer(builder.Configuration.GetConnectionString("MacBookMsSql")));
+    {
+        options.UseSqlServer(builder.Configuration.GetConnectionString("MacBookMsSql"));
+        options.EnableSensitiveDataLogging(); 
+        options.LogTo(Console.WriteLine);
+    }
+);
+builder.Services.AddScoped<IGenericCRUDService, GenericCRUDService>();
 
-builder.Services.AddScoped<ITeamMemberService, TeamMemberService>();
-builder.Services.AddScoped<IWorkService, WorkService>();
 var app = builder.Build();
 
 app.UseStaticFiles();

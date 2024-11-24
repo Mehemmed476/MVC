@@ -1,4 +1,4 @@
-@model PurpleBuzz.DAL.Models.TeamMember
+@model PurpleBuzz.DAL.Models.TeamMember 
 
 <div class="container mt-5">
     <div class="row">
@@ -8,7 +8,7 @@
                     <h4 class="card-title">Update Team Member</h4>
                 </div>
                 <div class="card-body">
-                    <form method="post" asp-action="EditTeamMember" asp-controller="TeamMember" asp-area="Admin">
+                    <form method="post">
                         <div class="form-group">
                             <label asp-for="Name" class="control-label">Name</label>
                             <input asp-for="Name" class="form-control"/>
