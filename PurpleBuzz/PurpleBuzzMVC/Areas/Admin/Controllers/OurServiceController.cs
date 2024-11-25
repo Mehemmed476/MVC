@@ -89,8 +89,9 @@ public class OurServiceController : Controller
 
     [HttpGet]
 
-    public IActionResult Details()
+    public async Task<IActionResult> Details(int id)
     {
-        return View();
+        OurService ourService = await _service.GetByIdAsync<OurService>(id);
+        return View(ourService);
     }
 }

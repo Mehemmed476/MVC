@@ -32,7 +32,7 @@
                     @foreach (Work item in Model)
                     {
                         <tr>
-                            <td><span style="position: relative; top: 18px;">@item.Id</span> <a type="button" class="btn btn-secondary" style="position: relative; top: 18px; left: 15px;"><i class="fa-solid fa-circle-info"></i></a></td>
+                            <td><span style="position: relative; top: 18px;">@item.Id</span> <a type="button" class="btn btn-secondary" style="position: relative; top: 18px; left: 15px;"asp-area="Admin" asp-action="Details" asp-controller="Work" asp-route-Id="@item.Id"><i class="fa-solid fa-circle-info"></i></a></td>
                             <td><span style="position: relative; top: 28px;">@item.Title</span></td>
                             <td><span style="position: relative; top: 28px;">@item.Description</span></td>
                             <td><img src="~/img/@item.MainImageUrl" style="width: 80px; height: 80px;border-radius: 30px; position: relative; left: 18px;"></td>

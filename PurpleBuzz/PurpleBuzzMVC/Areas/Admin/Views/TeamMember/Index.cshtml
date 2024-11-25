@@ -23,8 +23,6 @@
                     <th>Id</th>
                     <th>Name</th>
                     <th>Profession</th>
-                    <th>CreatedDate</th>
-                    <th>ModifiedDate</th>
                     <th>Image</th>
                     <th>Configures</th>
                 </tr>
@@ -33,11 +31,9 @@
                 @foreach (TeamMember item in Model)
                 {
                     <tr>
-                        <td>@item.Id</td>
+                        <td>@item.Id <a type="button" class="btn btn-secondary" style="position: relative; top: 18px; left: 15px;"asp-area="Admin" asp-action="Details" asp-controller="TeamMember" asp-route-Id="@item.Id"><i class="fa-solid fa-circle-info"></i></a></td>
                         <td>@item.Name</td>
                         <td>@item.Profession</td>
-                        <td>@item.CreatedDate</td>
-                        <td>@item.ModifiedDate</td>
                         <td><img src="~/img/@item.ImageUrl" style="width: 50px"></td>
                         <td><a type="button" class="btn btn-primary mt-2 ml-5 mr-3" asp-area="Admin" asp-action="EditTeamMember" asp-controller="TeamMember" asp-route-Id="@item.Id"><i class="fa-solid fa-pen-to-square"></i></a> <a type="button" class="btn btn-warning mt-2 mr-3" asp-area="Admin" asp-action="SoftDeleteTeamMember" asp-controller="TeamMember" asp-route-Id="@item.Id"><i class="fa-sharp fa-solid fa-trash"></i></a> <a type="button" class="btn btn-danger mt-2" asp-area="Admin" asp-action="DeleteTeamMember" asp-controller="TeamMember" asp-route-Id="@item.Id"><i class="fa-solid fa-delete-left"></i></a></td>
                     </tr> 

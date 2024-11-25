@@ -117,8 +117,9 @@ public class WorkController : Controller
     
     [HttpGet]
 
-    public IActionResult Details()
+    public async Task<IActionResult> Details(int id)
     {
-        return View();
+        Work work = await _service.GetByIdAsync<Work>(id);
+        return View(work);
     }
 }

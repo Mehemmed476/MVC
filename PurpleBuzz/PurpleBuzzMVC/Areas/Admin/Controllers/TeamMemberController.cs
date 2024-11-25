@@ -89,8 +89,9 @@ public class TeamMemberController : Controller
     
     [HttpGet]
 
-    public IActionResult Details()
+    public async Task<IActionResult> Details(int id)
     {
-        return View();
+        TeamMember teamMember = await _service.GetByIdAsync<TeamMember>(id);
+        return View(teamMember);
     }
 }
