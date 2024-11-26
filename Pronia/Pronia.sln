@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35312.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pronia.DAL", "Pronia.DAL\Pronia.DAL.csproj", "{85BE3141-9380-45A8-B58C-F3DEE013326D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pronia.BL", "Pronia.BL\Pronia.BL.csproj", "{BE41A9DE-E886-463E-8B42-5CFBA429FCA9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pronia.MVC", "Pronia.MVC\Pronia.MVC.csproj", "{86EEB6DA-3E34-45A6-8009-4325D8B1C50B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{85BE3141-9380-45A8-B58C-F3DEE013326D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85BE3141-9380-45A8-B58C-F3DEE013326D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85BE3141-9380-45A8-B58C-F3DEE013326D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85BE3141-9380-45A8-B58C-F3DEE013326D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE41A9DE-E886-463E-8B42-5CFBA429FCA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE41A9DE-E886-463E-8B42-5CFBA429FCA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE41A9DE-E886-463E-8B42-5CFBA429FCA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE41A9DE-E886-463E-8B42-5CFBA429FCA9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86EEB6DA-3E34-45A6-8009-4325D8B1C50B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86EEB6DA-3E34-45A6-8009-4325D8B1C50B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86EEB6DA-3E34-45A6-8009-4325D8B1C50B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86EEB6DA-3E34-45A6-8009-4325D8B1C50B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {21E4237D-5435-40FE-B26B-EE51C1B60668}
+	EndGlobalSection
+EndGlobal
