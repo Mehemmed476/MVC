@@ -8,7 +8,7 @@
                     <h4 class="card-title">Create OurService</h4>
                 </div>
                 <div class="card-body">
-                    <form method="post" asp-action="CreateOurService" asp-controller="OurService" asp-area="Admin">
+                    <form method="post" enctype="multipart/form-data" asp-action="CreateOurService" asp-controller="OurService" asp-area="Admin">
                         <div class="form-group">
                             <label asp-for="Title" class="control-label">Title</label>
                             <input asp-for="Title" class="form-control" />
@@ -18,8 +18,9 @@
                             <input asp-for="Description" class="form-control" />
                         </div>
                         <div class="form-group">
-                            <label asp-for="MainImageUrl" class="control-label">Image URL</label>
-                            <input asp-for="MainImageUrl" class="form-control" />
+                            <label asp-for="Image" class="form-label" hidden>Image</label>
+                            <input class="form-control" asp-for="Image" />
+                            <span asp-validation-for="Image" class="text-danger"></span>
                         </div>
                         
                         <button type="submit" class="btn btn-primary">Create</button>

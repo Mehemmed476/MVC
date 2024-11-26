@@ -7,10 +7,13 @@ namespace PurpleBuzzMVC.Areas.Admin.Controllers;
 public class OurServiceController : Controller
 {
     private readonly IGenericCRUDService _service;
-
-    public OurServiceController(IGenericCRUDService service)
+    
+    IWebHostEnvironment _webHostEnvironment;
+    
+    public OurServiceController(IGenericCRUDService service, IWebHostEnvironment webHostEnvironment)
     {
         _service = service;
+        _webHostEnvironment = webHostEnvironment;
     }
     
     [HttpGet]
@@ -38,13 +41,30 @@ public class OurServiceController : Controller
     [HttpPost]
     public async Task<IActionResult> CreateOurService(OurService ourService)
     {
-        if (ModelState.IsValid)
-        { 
-            await _service.CreateAsync(ourService);
-            return RedirectToAction(nameof(Index));
+        
+        
+        if (!ourService.Image.ContentType.Contains("image"))
+        {
+            ModelState.AddModelError("Image", "Only image format accepted");
+            return View(ourService);
         }
         
-        return View();
+        string path = _webHostEnvironment.WebRootPath + @"\Upload\OurServiceImages\";
+        string fileName = ourService.Image.FileName;
+        using(FileStream fileStream = new FileStream(path + fileName, FileMode.Create))
+        {
+            ourService.Image.CopyTo(fileStream);
+        }
+        
+        ourService.MainImageUrl = fileName;
+        
+        if (!ModelState.IsValid)
+        {
+            return View(ourService);
+        }
+        
+        await _service.CreateAsync(ourService);
+        return RedirectToAction("Index");
     }
 
     [HttpGet]

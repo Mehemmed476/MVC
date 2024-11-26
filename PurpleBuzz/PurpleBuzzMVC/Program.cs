@@ -1,7 +1,9 @@
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using PurpleBuzz.BL.Services.Abstractions;
 using PurpleBuzz.BL.Services.Concretes;
 using PurpleBuzz.DAL.Contexts;
+using PurpleBuzz.DAL.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
@@ -13,7 +15,20 @@ builder.Services.AddDbContext<PurpleBuzzDbContext>(
         options.LogTo(Console.WriteLine);
     }
 );
+
+builder.Services.AddIdentity<AppUser, IdentityRole>(
+    opt =>
+    {
+        opt.Password.RequiredLength = 8;
+        opt. Password.RequireUppercase = true;
+        opt.Password.RequireNonAlphanumeric = false;
+        opt.User.AllowedUserNameCharacters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-._@+";
+        opt.SignIn.RequireConfirmedEmail = false;
+    }
+).AddDefaultTokenProviders().AddEntityFrameworkStores<PurpleBuzzDbContext>();
+
 builder.Services.AddScoped<IGenericCRUDService, GenericCRUDService>();
+
 var app = builder.Build();
 
 app.UseStaticFiles();

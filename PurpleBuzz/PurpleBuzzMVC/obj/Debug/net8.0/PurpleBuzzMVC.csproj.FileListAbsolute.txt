@@ -259,3 +259,8 @@
 /Users/mehemmedxelilzade/RiderProjects/PurpleBuzz/PurpleBuzzMVC/obj/Debug/net8.0/ref/PurpleBuzzMVC.dll
 /Users/mehemmedxelilzade/RiderProjects/PurpleBuzz/PurpleBuzzMVC/bin/Debug/net8.0/PurpleBuzz.BL.dll
 /Users/mehemmedxelilzade/RiderProjects/PurpleBuzz/PurpleBuzzMVC/bin/Debug/net8.0/PurpleBuzz.BL.pdb
+/Users/mehemmedxelilzade/RiderProjects/PurpleBuzz/PurpleBuzzMVC/bin/Debug/net8.0/Microsoft.AspNetCore.Cryptography.Internal.dll
+/Users/mehemmedxelilzade/RiderProjects/PurpleBuzz/PurpleBuzzMVC/bin/Debug/net8.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+/Users/mehemmedxelilzade/RiderProjects/PurpleBuzz/PurpleBuzzMVC/bin/Debug/net8.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+/Users/mehemmedxelilzade/RiderProjects/PurpleBuzz/PurpleBuzzMVC/bin/Debug/net8.0/Microsoft.Extensions.Identity.Core.dll
+/Users/mehemmedxelilzade/RiderProjects/PurpleBuzz/PurpleBuzzMVC/bin/Debug/net8.0/Microsoft.Extensions.Identity.Stores.dll

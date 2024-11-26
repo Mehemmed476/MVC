@@ -26,9 +26,8 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Areas\Admin\Data\" />
-      <Folder Include="Areas\Admin\Models\" />
       <Folder Include="wwwroot\Admin\" />
+      <Folder Include="wwwroot\Upload\OurServiceImages\" />
     </ItemGroup>
 
 </Project>
