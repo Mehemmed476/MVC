@@ -1,4 +1,9 @@
 @model PurpleBuzz.BL.DTOs.CreateUserDTO;
+
+@{
+Layout = null;
+}
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,6 +18,8 @@
     <title>SB Admin 2 - Register</title>
 
     <!-- Custom fonts for this template-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
     <link href="~/Admin/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link
         href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
@@ -31,7 +38,9 @@
         <div class="card-body p-0">
             <!-- Nested Row within Card Body -->
             <div class="row">
-                <div class="col-lg-5 d-none d-lg-block bg-register-image"></div>
+                <div class="col-lg-5 d-none d-lg-block bg-register-image">
+                    <a type="button" class="btn btn-primary ml-4 mt-4" asp-controller="Home" asp-action="Index"><i class="fa-solid fa-circle-left mr-2"></i>Go Back</a>
+                </div>
                 <div class="col-lg-7">
                     <div class="p-5">
                         <div class="text-center">
@@ -84,7 +93,7 @@
                             <a class="small" href="forgot-password.html">Forgot Password?</a>
                         </div>
                         <div class="text-center">
-                            <a class="small" href="login.html">Already have an account? Login!</a>
+                            <a class="small" asp-controller="Accounts" asp-action="Login">Already have an account? Login!</a>
                         </div>
                     </div>
                 </div>

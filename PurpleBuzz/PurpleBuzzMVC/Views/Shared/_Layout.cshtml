@@ -5,6 +5,7 @@
     <title>Purple Buzz HTML Template with Bootstrap 5 Beta 1</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link rel="apple-touch-icon" href="~/img/apple-icon.png">
     <link rel="shortcut icon" type="image/x-icon" href="~/img/favicon.ico">
     <!-- Load Require CSS -->
@@ -60,7 +61,17 @@ https://templatemo.com/tm-561-purple-buzz
                 <div class="navbar align-self-center d-flex">
                     <a class="nav-link" href="#"><i class='bx bx-bell bx-sm bx-tada-hover text-primary'></i></a>
                     <a class="nav-link" href="#"><i class='bx bx-cog bx-sm text-primary'></i></a>
-                    <a class="nav-link" asp-controller="Accounts" asp-action="Register"><i class='bx bx-user-circle bx-sm text-primary'></i>Register</a>
+                    
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <a class="nav-link" href="#">@User.Identity.Name</a> 
+                        <a class="btn btn-dark m-3" asp-controller="Accounts" asp-action="Logout"><i class="fa-solid fa-right-from-bracket"></i></a>  
+                    }
+                    else
+                    {
+                        <a class="nav-link" asp-controller="Accounts" asp-action="Register"><i class='bx bx-user-circle bx-sm text-primary'></i></a>
+                    }
+                    
                     <a class="nav-link btn btn-light" asp-area="Admin" asp-controller="Dashboard" asp-action="Index" type="button" >Admin</a>
                 </div>
             </div>

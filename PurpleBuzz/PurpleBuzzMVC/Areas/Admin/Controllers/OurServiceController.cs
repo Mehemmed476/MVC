@@ -49,14 +49,14 @@ public class OurServiceController : Controller
             return View(ourService);
         }
         
-        string path = _webHostEnvironment.WebRootPath + @"\Upload\OurServiceImages\";
+        string path = _webHostEnvironment.WebRootPath + @"~\Upload\OurServiceImages\";
         string fileName = ourService.Image.FileName;
         using(FileStream fileStream = new FileStream(path + fileName, FileMode.Create))
         {
             ourService.Image.CopyTo(fileStream);
         }
-        
-        ourService.MainImageUrl = fileName;
+
+        ourService.MainImageUrl = path;
         
         if (!ModelState.IsValid)
         {
