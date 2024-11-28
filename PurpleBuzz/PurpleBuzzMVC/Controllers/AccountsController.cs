@@ -58,7 +58,7 @@ public class AccountsController : Controller
     {
         return View();
     }
-
+    [ValidateAntiForgeryToken]
     [HttpPost]
     public async Task<IActionResult> Login(LoginDTO loginDto)
     {
